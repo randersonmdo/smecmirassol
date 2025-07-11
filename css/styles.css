@@ -195,6 +195,9 @@ footer .social a {
     .card {
         text-align: center;
         display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero {
