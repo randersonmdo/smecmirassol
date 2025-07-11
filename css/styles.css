@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+header.hero {
+    background: linear-gradient(120deg, #ff6a00, #ffbc00);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero .btn {
+    background-color: #fff;
+    color: #ff6a00;
+    padding: 10px 20px;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.team-overview ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.team-section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 40px 0;
+    border-top: 3px solid #ff6a00;
+}
+
+.team-section h2 {
+    margin-bottom: 20px;
+    color: #ff6a00;
+    font-size: 24px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card.single {
+    max-width: 300px;
+    margin: auto;
+}
+
+footer.contact {
+    background-color: #ff6a00;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
