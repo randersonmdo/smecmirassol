@@ -136,3 +136,25 @@ footer .social a {
     text-decoration: none;
     font-weight: bold;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cards, .feature-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news article {
+        flex-direction: column;
+    }
+
+    .news img {
+        width: 100%;
+        height: auto;
+    }
+}
