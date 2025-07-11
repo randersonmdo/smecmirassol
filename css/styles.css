@@ -65,6 +65,7 @@ body {
 }
 
 .services, .news {
+    display: flex;
     padding: 60px 20px;
     text-align: center;
 }
@@ -141,6 +142,7 @@ footer .social a {
 @media (max-width: 768px) {
     .navbar {
         display: flex;
+
         flex-direction: column;
         align-items: flex-start;
     }
