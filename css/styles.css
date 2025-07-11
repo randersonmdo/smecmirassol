@@ -103,6 +103,8 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
+
 }
 
 .card {
@@ -114,6 +116,7 @@ a {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
+
 }
 
 .card h3 {
@@ -181,15 +184,21 @@ footer .social a {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+        flex-wrap: wrap;
+
     }
 
     .navbar nav ul {
         flex-direction: column;
         width: 100%;
+        flex-wrap: wrap;
+
     }
 
     .navbar nav li {
         width: 100%;
+        flex-wrap: wrap;
+
     }
 
     .card {
@@ -198,6 +207,8 @@ footer .social a {
         position: relative;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
+
     }
 
     .hero {
@@ -205,6 +216,8 @@ footer .social a {
         position: relative;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
+
     }
 
     .news {
@@ -212,12 +225,16 @@ footer .social a {
         position: relative;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
+
     }
 
     .services {
         display: flex;
+        flex-wrap: wrap;
         position: relative;
         align-items: center;
         justify-content: center;
+
     }
 }
