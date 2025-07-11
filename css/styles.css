@@ -66,6 +66,7 @@ body {
 
 .services, .news {
     display: flex;
+    flex-wrap: wrap;
     padding: 60px 20px;
     text-align: center;
 }
