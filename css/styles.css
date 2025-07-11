@@ -140,20 +140,24 @@ footer .social a {
 /* Responsividade */
 @media (max-width: 768px) {
     .navbar {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
     .cards, .feature-grid {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .news article {
+        display: flex;
         flex-direction: column;
     }
 
     .news img {
+        display: flex;
         width: 100%;
         height: auto;
     }
