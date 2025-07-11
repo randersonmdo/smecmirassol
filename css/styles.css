@@ -1,3 +1,12 @@
+/* Tema Futurista com Cores Personalizadas */
+:root {
+    --primary-color: #0000CD;
+    --secondary-color: #32CD32;
+    --accent-color: #FF8C00;
+    --light-bg: #f4f6f8;
+    --dark-text: #333;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,108 +15,146 @@
 }
 
 body {
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6;
+    background: var(--light-bg);
+    color: var(--dark-text);
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px 0;
-}
-
-header.hero {
-    background: #FF8C00;
-    color: white;
-    padding: 60px 0;
-    text-align: center;
-    border-bottom: 5px solid #0000CD;
-}
-
-.hero .btn {
-    background-color: #32CD32;
-    color: white;
-    padding: 12px 24px;
-    margin-top: 20px;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s;
-}
-
-.hero .btn:hover {
-    background-color: #28a428;
-}
-
-.features {
-    background-color: #ffffff;
-    padding: 60px 0;
-    text-align: center;
-}
-
-.features h2 {
-    color: #0000CD;
-    font-size: 28px;
-    margin-bottom: 40px;
-}
-
-.feature-grid {
+.navbar {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 20px;
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
-.feature-card {
-    background-color: #f9f9f9;
-    border-left: 5px solid #0000CD;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    text-align: left;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.feature-card h3 {
-    color: #0000CD;
-    margin-bottom: 10px;
+.navbar nav a:hover {
+    color: var(--secondary-color);
 }
 
-.team-overview {
-    padding: 40px 0;
-    background-color: #ffffff;
+.hero {
+    background: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
 }
 
-.team-overview h2 {
-    color: #0000CD;
+.hero h1 {
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
-.team-overview ul {
-    list-style-type: square;
-    margin-left: 20px;
-    padding-top: 10px;
-}
-
-.image-banner {
-    padding: 40px 0;
+.services, .news {
+    padding: 60px 20px;
     text-align: center;
 }
 
-.image-banner img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+.services h2, .news h2 {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 40px;
 }
 
-footer.contact {
-    background-color: #FF8C00;
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-top: 5px solid var(--accent-color);
+    padding: 20px;
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.news article {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.news img {
+    width: 200px;
+    object-fit: cover;
+    height: auto;
+}
+
+.news h3 {
+    margin: 16px 0 8px;
+}
+
+.news p {
+    padding: 0 16px 16px;
+    text-align: left;
+}
+
+footer {
+    background: var(--accent-color);
     color: white;
     text-align: center;
     padding: 40px 20px;
+}
+
+footer .social a {
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cards, .feature-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news article {
+        flex-direction: column;
+    }
+
+    .news img {
+        width: 100%;
+        height: auto;
+    }
 }
