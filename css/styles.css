@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #f7f7f7;
+    background-color: #f0f0f0;
     color: #333;
     line-height: 1.6;
 }
@@ -19,68 +19,94 @@ body {
 }
 
 header.hero {
-    background: linear-gradient(120deg, #ff6a00, #ffbc00);
+    background: #FF8C00;
     color: white;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 5px solid #0000CD;
+}
+
+.hero .btn {
+    background-color: #32CD32;
+    color: white;
+    padding: 12px 24px;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #28a428;
+}
+
+.features {
+    background-color: #ffffff;
     padding: 60px 0;
     text-align: center;
 }
 
-.hero .btn {
-    background-color: #fff;
-    color: #ff6a00;
-    padding: 10px 20px;
-    margin-top: 20px;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+.features h2 {
+    color: #0000CD;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.feature-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #f9f9f9;
+    border-left: 5px solid #0000CD;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.feature-card h3 {
+    color: #0000CD;
+    margin-bottom: 10px;
+}
+
+.team-overview {
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.team-overview h2 {
+    color: #0000CD;
+    margin-bottom: 20px;
 }
 
 .team-overview ul {
-    list-style-type: disc;
+    list-style-type: square;
     margin-left: 20px;
     padding-top: 10px;
 }
 
-.team-section {
-    background-color: #fff;
-    margin: 20px 0;
+.image-banner {
     padding: 40px 0;
-    border-top: 3px solid #ff6a00;
-}
-
-.team-section h2 {
-    margin-bottom: 20px;
-    color: #ff6a00;
-    font-size: 24px;
-}
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background-color: #f1f1f1;
-    padding: 20px;
     text-align: center;
+}
+
+.image-banner img {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card.single {
-    max-width: 300px;
-    margin: auto;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
 }
 
 footer.contact {
-    background-color: #ff6a00;
+    background-color: #FF8C00;
     color: white;
     text-align: center;
     padding: 40px 20px;
