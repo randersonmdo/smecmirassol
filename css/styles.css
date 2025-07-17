@@ -106,6 +106,7 @@ body {
   width: 100%;
   z-index: 2;
   left: 0;
+  display: block;
 }
 
 .menu-site ul {
@@ -143,7 +144,7 @@ body {
 }
 
 .menu-site a:hover {
-    font-size: 17px;
+  font-size: 17px;
   background: white;
   color: #002864;
   border-radius: 4px;
