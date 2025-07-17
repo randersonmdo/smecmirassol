@@ -151,23 +151,23 @@ body {
   transform: scale(1.15);
 }
 
-widget-tempo {
+.widget-tempo {
   display: flex;
   align-items: center;
   gap: 10px;
   background: rgba(255, 255, 255, 0.6);
   padding: 10px 20px;
-  border-bottom: 1px solid #ccc;
   font-family: Arial, sans-serif;
   font-size: 14px;
   color: #333;
   backdrop-filter: blur(4px);
+  border-bottom: 1px solid #ccc;
   position: relative;
   z-index: 3;
 }
 
 .icone-sol {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .info-tempo strong {

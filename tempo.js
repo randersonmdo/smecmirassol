@@ -9,14 +9,17 @@ function atualizarWidgetTempo() {
   const dia = agora.getDate().toString().padStart(2, '0');
   const mes = (agora.getMonth() + 1).toString().padStart(2, '0');
 
-  let hora = agora.getHours();
-  if (hora < 12) saudacao.textContent = "Bom dia,";
-  else if (hora < 18) saudacao.textContent = "Boa tarde,";
+  const horas = agora.getHours();
+
+  // Saudação
+  if (horas < 12) saudacao.textContent = "Bom dia,";
+  else if (horas < 18) saudacao.textContent = "Boa tarde,";
   else saudacao.textContent = "Boa noite,";
 
+  // Data
   dataEl.textContent = ${diaSemana}, ${dia}/${mes};
 }
 
 atualizarWidgetTempo();
-setInterval(atualizarWidgetTempo, 60 * 1000); // atualiza a cada 1 minuto
+setInterval(atualizarWidgetTempo, 60 * 1000); // atualiza a cada 1 min
 </script>
