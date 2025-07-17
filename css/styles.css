@@ -18,7 +18,6 @@ body {
 }
 
 nav {
-  background-color: #004080;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -32,6 +31,7 @@ nav .logo img {
 }
 
 .background ul {
+  background-color: #004080;
   list-style: none;
   display: flex;
   gap: 15px;
