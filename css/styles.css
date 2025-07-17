@@ -45,6 +45,7 @@ body {
     padding: 100px 20px;
     text-align: center;
     color: white;
+    max-height: 100%;
 }
 
 .banner h1,
