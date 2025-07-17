@@ -91,6 +91,7 @@ body {
 }
 
 .pesquisa button {
+    
     padding: 10px 15px;
     background-color: #31aa25;
     color: white;
@@ -100,6 +101,6 @@ body {
 }
 
 
-.fa fa-search img {
-    width: 50px;
+.fa-fa-search img {
+    max-width: 25%;
 }
