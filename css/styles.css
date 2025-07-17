@@ -31,7 +31,7 @@ nav .logo img {
   height: 40px;
 }
 
-nav ul {
+.background ul {
   list-style: none;
   display: flex;
   gap: 15px;
