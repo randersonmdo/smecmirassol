@@ -40,19 +40,11 @@ body {
 /* BANNER COM FUNDO DESFOCADO */
 .banner {
     background: url('/img/Background.png') no-repeat center center;
+    background-size: cover;
     position: relative;
     padding: 100px 20px;
     text-align: center;
     color: white;
-}
-
-.banner::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 0;
 }
 
 .banner h1,
