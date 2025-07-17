@@ -83,8 +83,9 @@ body {
 
 .pesquisa input {
     padding: 10px 20px;
-    border-color: #31aa25 25px 25px 25px 25px;
-    border-radius: 25px 0 0 25px;
+    border: 3px solid #31aa25;
+    border-radius: 50px;
+    outline: none;
     width: 300px;
     font-size: 14px;
 }
