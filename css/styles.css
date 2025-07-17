@@ -39,7 +39,7 @@ body {
 
 /* BANNER COM FUNDO DESFOCADO */
 .banner {
-  background: url('https://images.unsplash.com/photo-1604447146255-06d7fe3f582b?auto=format&fit=crop&w=1470&q=80') no-repeat center center;
+  background: url('/img/Background.png') no-repeat center center;
   background-size: cover;
   position: relative;
   padding: 100px 20px;
