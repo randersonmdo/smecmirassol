@@ -98,13 +98,14 @@ body {
 }
 
 .menu-site {
-  background: rgba(0, 40, 100, 0.85); /* azul escuro com leve transparência */
+  background: rgba(0, 40, 100, 0.5); /* azul escuro com leve transparência */
   padding: 10px 0;
   font-family: Arial, sans-serif;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 2;
+  left: 0;
 }
 
 .menu-site ul {
