@@ -106,8 +106,7 @@ body {
   width: 100%;
   z-index: 2;
   left: 0;
-  display: block;
-}
+display: inline-block;}
 
 .menu-site ul {
   list-style: none;
