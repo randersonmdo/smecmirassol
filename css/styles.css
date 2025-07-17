@@ -98,10 +98,10 @@ body {
 }
 
 .menu-site {
-  background: rgba(0, 40, 100, 0.2); /* azul escuro com transparência */
+  background: rgba(0, 40, 100, 0.85); /* azul escuro com leve transparência */
   padding: 10px 0;
-  text-align: center;
   font-family: Arial, sans-serif;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 2;
@@ -111,7 +111,8 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -127,6 +128,7 @@ body {
   top: 30%;
   height: 40%;
   width: 1px;
+  background: white;
 }
 
 .menu-site a {
