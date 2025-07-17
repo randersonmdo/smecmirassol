@@ -102,6 +102,9 @@ body {
   padding: 10px 0;
   text-align: center;
   font-family: Arial, sans-serif;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .menu-site ul {
@@ -121,8 +124,8 @@ body {
   content: "";
   position: absolute;
   right: 0;
-  top: 0%;
-  height: 0%;
+  top: 30%;
+  height: 40%;
   width: 1px;
 }
 
