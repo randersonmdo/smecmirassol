@@ -1,240 +1,133 @@
-:root {
-    --primary-color: #0000CD;
-    --secondary-color: #32CD32;
-    --accent-color: #FF8C00;
-    --light-bg: #f4f6f8;
-    --dark-text: #333;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: var(--light-bg);
-    color: var(--dark-text);
+  font-family: Arial, sans-serif;
+  background: url('https://source.unsplash.com/1600x900/?classroom,books') no-repeat center center fixed;
+  background-size: cover;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+.blur-bg {
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.85);
+  min-height: 100vh;
+  padding: 0;
 }
 
-.navbar {
-    background: var(--primary-color);
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+nav {
+  background-color: #004080;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
 }
 
-.navbar .logo {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
+nav .logo img {
+  height: 40px;
 }
 
-.navbar nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    padding-left: 0;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
 }
 
-.navbar nav li {
-    margin: 5px 0;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.navbar nav a {
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s;
+header {
+  text-align: center;
+  padding: 20px 10px;
 }
 
-.navbar nav a:hover {
-    color: var(--secondary-color);
+header img {
+  max-height: 60px;
 }
 
-.hero {
-    background: var(--secondary-color);
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
+header h1 {
+  font-size: 1.8em;
+  margin-top: 10px;
 }
 
-.hero h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.1rem;
-}
-
-.services,
-.news {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.services h2,
-.news h2 {
-    font-size: 1.8rem;
-    color: var(--primary-color);
-    margin-bottom: 30px;
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 20px;
 }
 
 .card {
-    background: white;
-    border-top: 5px solid var(--accent-color);
-    padding: 20px;
-    max-width: 320px;
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
-.card h3 {
-    color: var(--primary-color);
-    margin-bottom: 10px;
+.card:hover {
+  transform: scale(1.05);
 }
 
-.news article {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 100%;
-    margin: auto;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.green {
+  background-color: #4CAF50;
+  color: white;
 }
 
-.news img {
-    width: 100%;
-    max-width: 300px;
-    object-fit: cover;
-    height: auto;
-    flex: 1 1 100%;
+.yellow {
+  background-color: #FFC107;
+  color: black;
 }
 
-.news-content {
-    flex: 1 1 100%;
-    padding: 20px;
-    text-align: left;
+.blue {
+  background-color: #2196F3;
+  color: white;
+}
+
+.red {
+  background-color: #f44336;
+  color: white;
+}
+
+h2 {
+  margin: 30px 0 10px;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 footer {
-    background: var(--accent-color);
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
 }
 
-footer .social a {
-    color: white;
-    margin: 0 5px;
-    font-weight: bold;
-    display: inline-block;
-}
-
-/* RESPONSIVO */
-@media (min-width: 768px) {
-    .news article {
-        flex-direction: row;
-    }
-
-    .news img {
-        max-width: 300px;
-        flex: none;
-    }
-
-    .news-content {
-        flex: 1;
-    }
-}
-
-@media (max-width: 767px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        flex-wrap: wrap;
-
-    }
-
-    .navbar nav ul {
-        flex-direction: column;
-        width: 100%;
-        flex-wrap: wrap;
-
-    }
-
-    .navbar nav li {
-        width: 100%;
-        flex-wrap: wrap;
-
-    }
-
-    .card {
-        text-align: center;
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-    }
-
-    .hero {
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-    }
-
-    .news {
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-    }
-
-    .services {
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-
-    }
+#chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
