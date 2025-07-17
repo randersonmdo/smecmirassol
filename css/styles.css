@@ -148,4 +148,6 @@ body {
   color: #002864;
   border-radius: 4px;
   transform: scale(1.15);
+  padding: 0;
 }
+
