@@ -92,11 +92,11 @@ body {
 
 .pesquisa button {
 
-    padding: 10px 15px;
+    padding: 100px 150px;
     background-color: #31aa25;
     color: white;
     border: none;
-    border-radius: 0px 25px 25px 25px;
+    border-radius: 0px 25px 25px 0px;
     cursor: pointer;
 }
 
