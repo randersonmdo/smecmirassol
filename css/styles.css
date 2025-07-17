@@ -40,7 +40,6 @@ body {
 /* BANNER COM FUNDO DESFOCADO */
 .banner {
     background: url('/img/Background.png') no-repeat center center;
-    background-size: cover;
     position: relative;
     padding: 100px 20px;
     text-align: center;
