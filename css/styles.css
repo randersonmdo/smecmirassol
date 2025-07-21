@@ -125,7 +125,7 @@ body {
 .menu-site li:not(:last-child)::after {
   content: "";
   position: absolute;
-  right: 0;
+  right: 5;
   top: 30%;
   height: 40%;
   width: 1px;
