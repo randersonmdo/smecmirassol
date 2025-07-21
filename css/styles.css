@@ -370,7 +370,7 @@ footer {
 }
 
 .footer-redes img {
-  width: 36px;
+  width: 50px;
 }
 
 .footer-redes a:hover {
@@ -451,8 +451,6 @@ a:hover::before {
 a:hover::after {
   width: 100%;
   transition: width 0.25s ease-in-out 0.25s;
-}
-
 }
 
 /* rodapé final */
