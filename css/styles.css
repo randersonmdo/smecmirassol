@@ -104,7 +104,6 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  max width: 500px;
   z-index: 2;
   left: 0;
 }
