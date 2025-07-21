@@ -144,10 +144,11 @@ body {
 }
 
 .menu-site a:hover {
+  font-size: 17px;
   background: white;
   color: #002864;
   border-radius: 4px;
-  transform: scale(5);
+  transform: scale(1.15);
 }
 
 .widget-tempo {
