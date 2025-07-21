@@ -421,7 +421,10 @@ footer {
   text-decoration: none;
   position: relative;
   overflow: hidden;
+  
+}
 
+.footer-links
   a::before,
 a::after {
   content: "";
@@ -451,10 +454,7 @@ a:hover::after {
   width: 100%;
   transition: width 0.25s ease-in-out 0.25s;
 }
-  
 }
-
-
 
 /* rodapé final */
 .footer-copy {
