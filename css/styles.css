@@ -440,17 +440,17 @@ a::before {
   left: 0;
 }
 
-a::after {
+.footer-links a::after {
   bottom: 0;
   right: 0;
 }
 
-a:hover::before {
+.footer-links a:hover::before {
   width: 100%;
   transition: width 0.25s ease-in-out;
 }
 
-a:hover::after {
+.footer-links a:hover::after {
   width: 100%;
   transition: width 0.25s ease-in-out 0.25s;
 }
