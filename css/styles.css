@@ -106,6 +106,7 @@ body {
   width: 100%;
   z-index: 2;
   left: 0;
+  line-height: 30px;
 }
 
 .menu-site ul {
