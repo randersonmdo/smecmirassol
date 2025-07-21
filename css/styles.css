@@ -267,6 +267,9 @@ body {
   }
 }
 
+.oficios {
+  gap: 50px;
+}
 
 .oficios h2 {
   font-size: 2rem;
