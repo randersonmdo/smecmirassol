@@ -325,7 +325,7 @@ footer {
 
 /* SEÇÃO 1 - topo com imagem de fundo */
 .footer-top {
-  background: url('img/bg-footer.jpg') center/cover no-repeat;
+  background: url('/img/Rodape.png') center/cover no-repeat;
   color: #fff;
   padding: 40px 20px;
 }
