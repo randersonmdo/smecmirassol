@@ -418,7 +418,6 @@ footer {
 
 .footer-links a:hover {
   color: #555;
-  a {
   text-decoration: none;
   position: relative;
   overflow: hidden;
