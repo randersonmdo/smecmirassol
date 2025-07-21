@@ -297,6 +297,10 @@ body {
   text-align: center;
 }
 
+.plano {
+  padding: 40px;
+}
+
 .plano h2 {
   font-size: 2rem;
   color: #555;
