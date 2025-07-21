@@ -268,7 +268,7 @@ body {
 }
 
 .oficios {
-  gap: 50px;
+  padding: 60px 20px 40px;
 }
 
 .oficios h2 {
