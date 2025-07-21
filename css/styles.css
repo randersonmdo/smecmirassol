@@ -421,11 +421,10 @@ footer {
   text-decoration: none;
   position: relative;
   overflow: hidden;
-  
+
 }
 
-.footer-links
-  .footer-links a::before,
+.footer-links .footer-links a::before,
 .footer-links a::after {
   content: "";
   position: absolute;
@@ -466,6 +465,5 @@ footer {
   margin-top: 20px;
   width: 100%;
   left: 0;
-right: 0;
+  right: 0;
 }
-
