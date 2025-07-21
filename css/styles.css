@@ -318,3 +318,85 @@ body {
   margin-bottom: 30px;
   text-align: center;
 }
+
+.rodape {
+  background: #f0f0f0;
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+
+.rodape-topo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 20px;
+  border-top: 5px solid #cccccc;
+}
+
+.logo-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-rodape {
+  width: 180px;
+  height: auto;
+}
+
+.redes-sociais {
+  text-align: center;
+}
+
+.redes-sociais span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.redes-sociais a img {
+  width: 32px;
+  margin: 0 5px;
+  transition: transform 0.3s ease;
+}
+
+.redes-sociais a img:hover {
+  transform: scale(1.1);
+}
+
+.informacoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+  flex: 1;
+  margin-top: 20px;
+}
+
+.informacoes > div {
+  min-width: 200px;
+}
+
+.informacoes h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.informacoes a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.informacoes a:hover {
+  text-decoration: underline;
+}
+
+.rodape-baixo {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
