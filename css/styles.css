@@ -144,7 +144,7 @@ body {
 }
 
 .menu-site a:hover {
-  
+  font-size: 17px;
   background: white;
   color: #002864;
   border-radius: 4px;
