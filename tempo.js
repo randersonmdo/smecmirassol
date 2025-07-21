@@ -1,4 +1,3 @@
-<script>
 function atualizarWidgetTempo() {
   const agora = new Date();
   const saudacao = document.getElementById("saudacao");
@@ -17,9 +16,8 @@ function atualizarWidgetTempo() {
   else saudacao.textContent = "Boa noite,";
 
   // Data
-  dataEl.textContent = ${diaSemana}, ${dia}/${mes};
+  dataEl.textContent = `${diaSemana}, ${dia}/${mes}`;
 }
 
 atualizarWidgetTempo();
-setInterval(atualizarWidgetTempo, 60 * 1000); // atualiza a cada 1 min
-</script>
+setInterval(atualizarWidgetTempo, 60 * 1000);
