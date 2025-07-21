@@ -174,3 +174,64 @@ body {
   color: #222;
   font-size: 15px;
 }
+
+.legislacao {
+  background-color: #d9d9d9;
+  padding: 40px 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+.legislacao h2 {
+  font-size: 2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #bfbfbf;
+  padding: 20px;
+  border-radius: 16px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.card i {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card ul li {
+  font-size: 0.9rem;
+  margin: 3px 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
