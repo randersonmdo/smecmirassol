@@ -310,6 +310,7 @@ body {
   margin: 0;
   position: relative;
   overflow: hidden;
+  padding: 40px;
 }
 
 .planopm h2 {
