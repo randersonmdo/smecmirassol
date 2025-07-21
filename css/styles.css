@@ -213,6 +213,10 @@ body {
   transition: transform 0.2s;
 }
 
+.card img {
+  max-width: 50px;
+}
+
 .card:hover {
   transform: translateY(-4px);
 }
