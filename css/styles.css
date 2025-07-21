@@ -176,14 +176,13 @@ body {
 }
 
 .legislacao {
-  background: linear-gradient(135deg, #6e2aa3, #bd1fbf);
-  color: white;
+  background: linear-gradient(135deg, #eeeeee, #d3d3d3);
+  color: #333;
   padding: 60px 20px 40px;
-  border-radius: 0 0 50% 50% / 0 0 10% 10%;
+  border-radius: 20px;
   text-align: center;
-  margin: 0;
-  position: relative;
-  overflow: hidden;
+  margin: 40px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 
