@@ -424,7 +424,7 @@ footer {
 
 }
 
-.footer-links .footer-links a::before,
+.footer-links a::before,
 .footer-links a::after {
   content: "";
   position: absolute;
