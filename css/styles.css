@@ -120,7 +120,6 @@ body {
 .menu-site li {
   position: relative;
   padding: 0 10px;
-  display: flex;
 }
 
 .menu-site li:not(:last-child)::after {
