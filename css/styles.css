@@ -425,8 +425,8 @@ footer {
 }
 
 .footer-links
-  a::before,
-a::after {
+  .footer-links a::before,
+.footer-links a::after {
   content: "";
   position: absolute;
   width: 0;
@@ -435,7 +435,7 @@ a::after {
   transition: all 0.5s;
 }
 
-a::before {
+.footer-links a::before {
   top: 0;
   left: 0;
 }
