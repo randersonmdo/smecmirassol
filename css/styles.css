@@ -456,9 +456,9 @@ footer {
 /* rodapé final */
 .footer-copy p {
   text-align: center;
-  padding: 10px;
+  padding: 0;
   background: #222;
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
   width: 100%;
 }
